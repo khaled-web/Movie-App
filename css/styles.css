@@ -1,0 +1,224 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(43, 86%, 17%);
+  --clr-primary-2: hsl(43, 77%, 27%);
+  --clr-primary-3: hsl(43, 72%, 37%);
+  --clr-primary-4: hsl(42, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(42, 78%, 60%);
+  /* black primary color */
+  --clr-black-1: #373331;
+  --clr-black-2: #000;
+  --clr-black-3: #333;
+  --clr-black-4: #63686e;
+  --clr-black-5: #272D2D;
+  --clr-black-6: #393e46;
+  --clr-black-7: #828489;
+  --clr-black-8: #272932;
+  --clr-black-9: #222;
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(43, 89%, 70%);
+  --clr-primary-7: hsl(43, 90%, 76%);
+  --clr-primary-8: hsl(45, 86%, 81%);
+  --clr-primary-9: hsl(45, 90%, 88%);
+  --clr-primary-10: hsl(45, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-11: #b6c2d9;
+  --clr-grey-12: #9e90a2;
+  --clr-grey-13: #999;
+  --clr-grey-14: #555;
+  --clr-grey-15: #9fa4a8;
+
+    /* green primary color*/
+  --clr-green-01: #2ecc71;
+  /* white primary color*/
+  --clr-white-1: #fff;
+  --clr-white-2: #ffe5ab;
+  --clr-white-3: #fcea90;
+  --clr-white-4: #fff1c1;
+  --clr-white-5: #ffd6a4;
+  --clr-white-6: #f6f7fb;
+  --clr-white-7: #e0e0e0;
+  --clr-white-8: #fafafa;
+  --clr-white-9: #e1e1e1;
+  --clr-white-10: #eee;
+  --clr-white-11: #f0f0f0;
+  --clr-white-12: #eafbff;
+    /* blue primary color*/
+  --clr-blue-1: #4d7ea8;
+  --clr-blue-2: #3498db;
+  --clr-blue-3: #686de0;
+  --clr-blue-4: #2b88f0;
+  --clr-blue-5: #273c75;
+  --clr-blue-6: #4290f9;
+  --clr-blue-7: #3494e4;
+  --clr-blue-8: #144fc6;
+  --clr-blue-9: #6ab3f8;
+  /* red primary color*/
+  --clr-red-1: #BB2525;
+  --clr-red-2: #e66b6b;
+  --clr-red-3: #ff7979;
+  /* yellow primary color */
+  --clr-yellow-1: #efedd6;
+  --clr-yellow-2: #f0932b;
+
+  /* special color */
+  --clr-special-1: #7d5fff;
+  --clr-special-2: #7158e2;
+  --clr-special-3: #5290f9;
+  --left-bg-color: rgba(87, 84, 236, 0.7);
+  --right-bg-color: rgba(43, 43, 43, .8);
+  --left-btn-hover-color: rgba(87, 84, 236, 1);
+  --right-btn-hover-color: rgba(28, 122, 28, 1);
+  --clr-purple01:#9f68e0;
+  --clr-purple02:#8e44ad;
+  --clr-purple03:#7378c5;
+  --clr-dark-blue:#22254b;
+  --clr-white-blue:#373b69;
+
+  --ff-primary: 'Poppins', sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --ff-third: 'Sacramento', cursive;
+  --transition: all .3s ease-in;
+  --spacing: 0.125rem;
+  --radius: .25rem;
+  --light-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  --dark-shadow: 0 10px 20px rgba(0,0,0,.1), 0 6px 6px rgba(0,0,0,.1);
+  --max-width: 1170px;
+  --hover-width: 75%;
+  --other-width: 25%;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+body{ 
+  background: var(--clr-dark-blue);
+  font-family:  var(--ff-primary);
+  margin: 0;
+
+}
+
+header{
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  background: var(--clr-white-blue);
+}
+
+.search{
+  background-color: transparent;
+  border: 2px solid var(--clr-dark-blue);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  color: var(--clr-white-1);
+}
+
+.search::placeholder{
+  color: var(--clr-purple03);
+}
+
+.search:focus{
+  outline: none;
+  background: var(--clr-dark-blue);
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie{
+  width: 300px;
+  margin: 1rem;
+  background: var(--clr-white-blue);
+  box-shadow: var(--light-shadow);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.movie img{
+  width: 100%;
+}
+
+.movie-info{
+  color: var(--clr-white-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 1rem 1rem;
+  letter-spacing: .5px;
+}
+
+.movie-info h3{
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+.movie-info span{
+  background: var(--clr-dark-blue);
+  padding: .25rem .5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.green{
+  color: lightgreen;
+}
+
+.orange{
+  color: orange;
+}
+
+.red{
+  color: red;
+}
+
+.overview{
+  background: var(--clr-white-1);
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: var(--transition);
+}
+
+.movie:hover .overview{
+  transform: translateY(0);
+}
